@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA49AD66182BFBB600C5CE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AD65182BFBB600C5CE73 /* Foundation.framework */; };
+		AA49AD68182BFBB600C5CE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AD67182BFBB600C5CE73 /* CoreGraphics.framework */; };
+		AA49AD6A182BFBB600C5CE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AD69182BFBB600C5CE73 /* UIKit.framework */; };
+		AA49AD70182BFBB600C5CE73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA49AD6E182BFBB600C5CE73 /* InfoPlist.strings */; };
+		AA49AD72182BFBB600C5CE73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49AD71182BFBB600C5CE73 /* main.m */; };
+		AA49AD76182BFBB600C5CE73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49AD75182BFBB600C5CE73 /* AppDelegate.m */; };
+		AA49AD7C182BFBB600C5CE73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49AD7B182BFBB600C5CE73 /* ViewController.m */; };
+		AA49AD7E182BFBB600C5CE73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA49AD7D182BFBB600C5CE73 /* Images.xcassets */; };
+		AA49ADB1182C0FC600C5CE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA49AD77182BFBB600C5CE73 /* Main.storyboard */; };
+		AA52CD6B182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52CD60182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.m */; };
+		AA52CD6C182CB62E00C43DA7 /* QBFeedbackTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52CD62182CB62E00C43DA7 /* QBFeedbackTopic.m */; };
+		AA52CD6D182CB62E00C43DA7 /* QBFeedbackTopicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52CD64182CB62E00C43DA7 /* QBFeedbackTopicListViewController.m */; };
+		AA52CD6E182CB62E00C43DA7 /* QBFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52CD66182CB62E00C43DA7 /* QBFeedbackViewController.m */; };
+		AA52CD6F182CB62E00C43DA7 /* QBFeedback.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA52CD68182CB62E00C43DA7 /* QBFeedback.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA49AD62182BFBB600C5CE73 /* QBFeedbackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBFeedbackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA49AD65182BFBB600C5CE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA49AD67182BFBB600C5CE73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA49AD69182BFBB600C5CE73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA49AD6D182BFBB600C5CE73 /* QBFeedbackDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QBFeedbackDemo-Info.plist"; sourceTree = "<group>"; };
+		AA49AD6F182BFBB600C5CE73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA49AD71182BFBB600C5CE73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA49AD73182BFBB600C5CE73 /* QBFeedbackDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QBFeedbackDemo-Prefix.pch"; sourceTree = "<group>"; };
+		AA49AD74182BFBB600C5CE73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA49AD75182BFBB600C5CE73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA49AD78182BFBB600C5CE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA49AD7A182BFBB600C5CE73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA49AD7B182BFBB600C5CE73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA49AD7D182BFBB600C5CE73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA49AD84182BFBB700C5CE73 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AA52CD5E182CB62E00C43DA7 /* QBFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFeedback.h; sourceTree = "<group>"; };
+		AA52CD5F182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFeedbackPlaceholderTextView.h; sourceTree = "<group>"; };
+		AA52CD60182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFeedbackPlaceholderTextView.m; sourceTree = "<group>"; };
+		AA52CD61182CB62E00C43DA7 /* QBFeedbackTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFeedbackTopic.h; sourceTree = "<group>"; };
+		AA52CD62182CB62E00C43DA7 /* QBFeedbackTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFeedbackTopic.m; sourceTree = "<group>"; };
+		AA52CD63182CB62E00C43DA7 /* QBFeedbackTopicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFeedbackTopicListViewController.h; sourceTree = "<group>"; };
+		AA52CD64182CB62E00C43DA7 /* QBFeedbackTopicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFeedbackTopicListViewController.m; sourceTree = "<group>"; };
+		AA52CD65182CB62E00C43DA7 /* QBFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFeedbackViewController.h; sourceTree = "<group>"; };
+		AA52CD66182CB62E00C43DA7 /* QBFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFeedbackViewController.m; sourceTree = "<group>"; };
+		AA52CD69182CB62E00C43DA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBFeedback.strings; sourceTree = "<group>"; };
+		AA52CD6A182CB62E00C43DA7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBFeedback.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA49AD5F182BFBB600C5CE73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA49AD68182BFBB600C5CE73 /* CoreGraphics.framework in Frameworks */,
+				AA49AD6A182BFBB600C5CE73 /* UIKit.framework in Frameworks */,
+				AA49AD66182BFBB600C5CE73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA49AD59182BFBB600C5CE73 = {
+			isa = PBXGroup;
+			children = (
+				AA49AD6B182BFBB600C5CE73 /* QBFeedbackDemo */,
+				AA49AD64182BFBB600C5CE73 /* Frameworks */,
+				AA49AD63182BFBB600C5CE73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA49AD63182BFBB600C5CE73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA49AD62182BFBB600C5CE73 /* QBFeedbackDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA49AD64182BFBB600C5CE73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA49AD65182BFBB600C5CE73 /* Foundation.framework */,
+				AA49AD67182BFBB600C5CE73 /* CoreGraphics.framework */,
+				AA49AD69182BFBB600C5CE73 /* UIKit.framework */,
+				AA49AD84182BFBB700C5CE73 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA49AD6B182BFBB600C5CE73 /* QBFeedbackDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CD5D182CB62E00C43DA7 /* QBFeedback */,
+				AA49AD74182BFBB600C5CE73 /* AppDelegate.h */,
+				AA49AD75182BFBB600C5CE73 /* AppDelegate.m */,
+				AA49AD7A182BFBB600C5CE73 /* ViewController.h */,
+				AA49AD7B182BFBB600C5CE73 /* ViewController.m */,
+				AA49AD9E182BFCBF00C5CE73 /* Resources */,
+				AA49AD6C182BFBB600C5CE73 /* Supporting Files */,
+			);
+			path = QBFeedbackDemo;
+			sourceTree = "<group>";
+		};
+		AA49AD6C182BFBB600C5CE73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA49AD6D182BFBB600C5CE73 /* QBFeedbackDemo-Info.plist */,
+				AA49AD6E182BFBB600C5CE73 /* InfoPlist.strings */,
+				AA49AD71182BFBB600C5CE73 /* main.m */,
+				AA49AD73182BFBB600C5CE73 /* QBFeedbackDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA49AD9E182BFCBF00C5CE73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA49AD77182BFBB600C5CE73 /* Main.storyboard */,
+				AA49AD7D182BFBB600C5CE73 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AA52CD5D182CB62E00C43DA7 /* QBFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CD5E182CB62E00C43DA7 /* QBFeedback.h */,
+				AA52CD65182CB62E00C43DA7 /* QBFeedbackViewController.h */,
+				AA52CD66182CB62E00C43DA7 /* QBFeedbackViewController.m */,
+				AA52CD63182CB62E00C43DA7 /* QBFeedbackTopicListViewController.h */,
+				AA52CD64182CB62E00C43DA7 /* QBFeedbackTopicListViewController.m */,
+				AA52CD5F182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.h */,
+				AA52CD60182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.m */,
+				AA52CD61182CB62E00C43DA7 /* QBFeedbackTopic.h */,
+				AA52CD62182CB62E00C43DA7 /* QBFeedbackTopic.m */,
+				AA52CD67182CB62E00C43DA7 /* Resources */,
+			);
+			name = QBFeedback;
+			path = ../../QBFeedback;
+			sourceTree = "<group>";
+		};
+		AA52CD67182CB62E00C43DA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CD68182CB62E00C43DA7 /* QBFeedback.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA49AD61182BFBB600C5CE73 /* QBFeedbackDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA49AD94182BFBB700C5CE73 /* Build configuration list for PBXNativeTarget "QBFeedbackDemo" */;
+			buildPhases = (
+				AA49AD5E182BFBB600C5CE73 /* Sources */,
+				AA49AD5F182BFBB600C5CE73 /* Frameworks */,
+				AA49AD60182BFBB600C5CE73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QBFeedbackDemo;
+			productName = QBFeedbackDemo;
+			productReference = AA49AD62182BFBB600C5CE73 /* QBFeedbackDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA49AD5A182BFBB600C5CE73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Katsuma Tanaka";
+			};
+			buildConfigurationList = AA49AD5D182BFBB600C5CE73 /* Build configuration list for PBXProject "QBFeedbackDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = AA49AD59182BFBB600C5CE73;
+			productRefGroup = AA49AD63182BFBB600C5CE73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA49AD61182BFBB600C5CE73 /* QBFeedbackDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA49AD60182BFBB600C5CE73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA49ADB1182C0FC600C5CE73 /* Main.storyboard in Resources */,
+				AA49AD7E182BFBB600C5CE73 /* Images.xcassets in Resources */,
+				AA52CD6F182CB62E00C43DA7 /* QBFeedback.strings in Resources */,
+				AA49AD70182BFBB600C5CE73 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA49AD5E182BFBB600C5CE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA52CD6E182CB62E00C43DA7 /* QBFeedbackViewController.m in Sources */,
+				AA52CD6D182CB62E00C43DA7 /* QBFeedbackTopicListViewController.m in Sources */,
+				AA52CD6C182CB62E00C43DA7 /* QBFeedbackTopic.m in Sources */,
+				AA49AD7C182BFBB600C5CE73 /* ViewController.m in Sources */,
+				AA52CD6B182CB62E00C43DA7 /* QBFeedbackPlaceholderTextView.m in Sources */,
+				AA49AD76182BFBB600C5CE73 /* AppDelegate.m in Sources */,
+				AA49AD72182BFBB600C5CE73 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA49AD6E182BFBB600C5CE73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA49AD6F182BFBB600C5CE73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA49AD77182BFBB600C5CE73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA49AD78182BFBB600C5CE73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA52CD68182CB62E00C43DA7 /* QBFeedback.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA52CD69182CB62E00C43DA7 /* en */,
+				AA52CD6A182CB62E00C43DA7 /* ja */,
+			);
+			name = QBFeedback.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA49AD92182BFBB700C5CE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA49AD93182BFBB700C5CE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA49AD95182BFBB700C5CE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBFeedbackDemo/QBFeedbackDemo-Prefix.pch";
+				INFOPLIST_FILE = "QBFeedbackDemo/QBFeedbackDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA49AD96182BFBB700C5CE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBFeedbackDemo/QBFeedbackDemo-Prefix.pch";
+				INFOPLIST_FILE = "QBFeedbackDemo/QBFeedbackDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA49AD5D182BFBB600C5CE73 /* Build configuration list for PBXProject "QBFeedbackDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA49AD92182BFBB700C5CE73 /* Debug */,
+				AA49AD93182BFBB700C5CE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA49AD94182BFBB700C5CE73 /* Build configuration list for PBXNativeTarget "QBFeedbackDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA49AD95182BFBB700C5CE73 /* Debug */,
+				AA49AD96182BFBB700C5CE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA49AD5A182BFBB600C5CE73 /* Project object */;
+}
