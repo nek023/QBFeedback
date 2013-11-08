@@ -52,8 +52,12 @@
     
     // Register notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textViewDidChange:)
-                                                 name:UITextViewTextDidChangeNotification
+                                             selector:@selector(textViewDidBeginEditing:)
+                                                 name:UITextViewTextDidBeginEditingNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(textViewDidBeginEditing:)
+                                                 name:UITextViewTextDidEndEditingNotification
                                                object:nil];
 }
 
@@ -61,7 +65,10 @@
 {
     // Remove notifications
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UITextViewTextDidChangeNotification
+                                                    name:UITextViewTextDidBeginEditingNotification
+                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UITextViewTextDidEndEditingNotification
                                                   object:nil];
 }
 
@@ -104,7 +111,12 @@
 
 #pragma mark - Notification
 
-- (void)textViewDidChange:(NSNotification *)notification
+- (void)textViewDidBeginEditing:(NSNotification *)notification
+{
+    [self updatePlaceholder];
+}
+
+- (void)textViewDidEndEditing:(NSNotification *)notification
 {
     [self updatePlaceholder];
 }
@@ -131,7 +143,7 @@
 {
     self.placeholderLabel.font = self.font;
     self.placeholderLabel.frame = [self placeholderLabelFrame];
-    self.placeholderLabel.alpha = (self.text.length > 0) ? 0.0 : 1.0;
+    self.placeholderLabel.alpha = ([self isFirstResponder] || self.text.length > 0) ? 0.0 : 1.0;
 }
 
 @end
