@@ -42,6 +42,18 @@
 }
 
 
+#pragma mark - Helper
+
+- (UIColor *)cellHighlightedTextColor
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        return [UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0];
+    } else {
+        return [UIColor colorWithRed:51.0/255.0 green:102.0/255.0 blue:153.0/255.0 alpha:1.0];
+    }
+}
+
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -68,7 +80,7 @@
     
     if ([topic isEqual:self.selectedTopic]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        cell.textLabel.textColor = [UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0];
+        cell.textLabel.textColor = [self cellHighlightedTextColor];
     }
     
     return cell;
@@ -88,7 +100,7 @@
     // Add checkmark to selected cell
     UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
-    selectedCell.textLabel.textColor = [UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0];
+    selectedCell.textLabel.textColor = [self cellHighlightedTextColor];
     
     // Update selected topic
     QBFeedbackTopic *topic = [self.topics objectAtIndex:indexPath.row];

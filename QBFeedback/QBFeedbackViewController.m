@@ -328,7 +328,8 @@
                     
                 case 1:
                 {
-                    self.descriptionTextView.frame = CGRectMake(10.0, 0, cell.contentView.bounds.size.width - 20.0, cell.contentView.bounds.size.height);
+                    CGFloat margin = [self descriptionTextViewMargin];
+                    self.descriptionTextView.frame = CGRectMake(margin, 0, cell.contentView.bounds.size.width - margin * 2.0, cell.contentView.bounds.size.height);
                     [cell.contentView addSubview:self.descriptionTextView];
                 }
                     break;
@@ -403,6 +404,15 @@
     return nil;
 }
 
+- (CGFloat)descriptionTextViewMargin
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        return 10.0;
+    } else {
+        return 2.0;
+    }
+}
+
 
 #pragma mark - UITableViewDelegate
 
@@ -421,7 +431,8 @@
     if (indexPath.section == 0 && indexPath.row == 1) {
         NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self.descriptionTextView.text
                                                                              attributes:@{ NSFontAttributeName : self.descriptionTextView.font }];
-        CGFloat height = [self textViewHeightForAttributedText:attributedText width:(self.view.bounds.size.width - 20.0)];
+        CGFloat margin = [self descriptionTextViewMargin];
+        CGFloat height = [self textViewHeightForAttributedText:attributedText width:(self.view.bounds.size.width - margin * 2.0)];
         
         return MAX(88.0, ceil(height) + 1.0);
     }

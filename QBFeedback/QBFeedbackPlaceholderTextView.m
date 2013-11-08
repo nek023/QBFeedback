@@ -114,9 +114,16 @@
 
 - (CGRect)placeholderLabelFrame
 {
-    return CGRectMake(5.0,
+    CGFloat leftMargin;
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        leftMargin = 5.0;
+    } else {
+        leftMargin = 8.0;
+    }
+    
+    return CGRectMake(leftMargin,
                       8.5,
-                      self.bounds.size.width - 10.0,
+                      self.bounds.size.width - leftMargin * 2.0,
                       ceil(self.font.lineHeight));
 }
 
